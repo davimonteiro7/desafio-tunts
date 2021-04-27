@@ -1,0 +1,23 @@
+{
+  "name": "spreadsheet-grades-calculator",
+  "version": "1.0.0",
+  "description": "This project intent This application aims to search student data on a spreadsheet, write their situation on the same spreadsheet.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davimonteiro7/desafio-tunts.git"
+  },
+  "author": "Davi Monteiro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davimonteiro7/desafio-tunts/issues"
+  },
+  "homepage": "https://github.com/davimonteiro7/desafio-tunts#readme",
+  "dependencies": {
+    "googleapis": "^72.0.0"
+  }
+}
