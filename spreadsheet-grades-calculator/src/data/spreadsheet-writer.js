@@ -1,7 +1,12 @@
 const logger = require('../config/logger');
 const { auth, google } = require('./spreadsheet-auth');
 
-// writes the required data(situation and naf) in a specific cell of the spreadsheet.
+/**
+ * Write the required data (situation, naf) in a specific cell of the spreadsheet
+ * @param {string} situation - [Reprovado por Falta, Reprovado por Nota, Exame Final]
+ * @param {number} naf - [Nota para Aprovação Final] minimum grade to pass the final exam
+ * @param {number} index - Used to assist where naf and situation will be written in the spreadsheet
+ */
 function spreadsheetWriter(situation, naf, index) {
   const sheets = google.sheets({ version: 'v4', auth });
   logger.info('-- Writing each student [situation, naf] in the spreadsheet.');
